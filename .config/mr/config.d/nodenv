@@ -1,4 +1,4 @@
-[$XDG_CONFIG_HOME/vcsh/repo.d/nodenv.git]
+[${XDG_CONFIG_HOME:-$HOME/.config}/vcsh/repo.d/nodenv.git]
 checkout = vcsh clone git@github.com:marklee77/vcsh-homedir-nodenv.git nodenv
 commit   = vcsh nodenv commit -a
 update   = vcsh nodenv pull
