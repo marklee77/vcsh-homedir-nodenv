@@ -1,0 +1,15 @@
+[$XDG_CONFIG_HOME/vcsh/repo.d/nodenv.git]
+checkout = vcsh clone git@github.com:marklee77/vcsh-homedir-nodenv.git nodenv
+commit   = vcsh nodenv commit -a
+update   = vcsh nodenv pull
+push     = vcsh nodenv push
+status   = vcsh nodenv status
+gc       = vcsh nodenv gc
+
+[.nodenv]
+checkout = git clone https://github.com/OiNutter/nodenv.git .nodenv
+push = /bin/true
+
+[.nodenv/plugins/node-build]
+checkout = git clone https://github.com/OiNutter/node-build.git node-build
+push = /bin/true

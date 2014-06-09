@@ -1,0 +1,10 @@
+*
+!.config
+!.config/mr
+!.config/mr/config.d
+!.config/mr/config.d/nodenv
+!.config/zsh
+!.config/zsh/config.d
+!.config/zsh/config.d/nodenv
+!.gitignore.d
+!.gitignore.d/nodenv
