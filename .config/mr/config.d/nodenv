@@ -8,8 +8,8 @@ gc       = vcsh nodenv gc
 
 [.nodenv]
 checkout = git clone https://github.com/OiNutter/nodenv.git .nodenv
-push = /bin/true
+skip     = test "$1" = push
 
 [.nodenv/plugins/node-build]
 checkout = git clone https://github.com/OiNutter/node-build.git node-build
-push = /bin/true
+skip     = test "$1" = push
