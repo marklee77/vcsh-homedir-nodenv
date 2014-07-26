@@ -1,4 +1,12 @@
 export PATH="${PATH}:${HOME}/.nodenv/bin"
-eval "$(nodenv init -)"
+
+function nodenv_info {
+    NODENV_VERSION=$(nodenv version-name)
+    if [ "${NODENV_VERSION}" != "system" ]; then
+      echo '%F{003}%Bnodejs-'${NODENV_VERSION}'%b%f '
+    fi
+}
 
 alias nodejs=node
+
+eval "$(nodenv init -)"
