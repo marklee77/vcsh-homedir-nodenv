@@ -1,7 +1,11 @@
-[.nodenv]
+[${XDG_CONFIG_HOME:-$HOME/.config}/vcsh/repo.d/nodenv.git]
+checkout = vcsh clone https://gitlab.stillwell.me/mark/vcsh-homedir-nodenv.git nodenv
+setpush  = vcsh nodenv remote set-url --push origin git@stillwell.me:mark/vcsh-homedir-nodenv.git
+
+[${HOME}/.nodenv]
 checkout = git clone https://github.com/OiNutter/nodenv.git .nodenv
 skip     = test "$1" = push
 
-[.nodenv/plugins/node-build]
+[${HOME}/.nodenv/plugins/node-build]
 checkout = git clone https://github.com/OiNutter/node-build.git node-build
 skip     = test "$1" = push
