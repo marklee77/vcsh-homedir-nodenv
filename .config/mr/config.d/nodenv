@@ -1,7 +1,8 @@
 [${HOME}/.nodenv]
 checkout = git clone https://github.com/OiNutter/nodenv.git .nodenv
-skip     = test "$1" = push
+skip     = [ "$1" = push ] || [ "$1" = autopush ]
+
 
 [${HOME}/.nodenv/plugins/node-build]
 checkout = git clone https://github.com/OiNutter/node-build.git node-build
-skip     = test "$1" = push
+skip     = [ "$1" = push ] || [ "$1" = autopush ]
