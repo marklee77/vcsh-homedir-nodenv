@@ -4,7 +4,7 @@
 !.config/mr/config.d
 !.config/mr/config.d/nodenv
 !.config/zsh
-!.config/zsh/rc.d
-!.config/zsh/rc.d/nodenv
+!.config/zsh/profile.d
+!.config/zsh/profile.d/nodenv
 !.gitignore.d
 !.gitignore.d/nodenv

@@ -1,4 +1,4 @@
-export PATH="${PATH}:${HOME}/.nodenv/bin"
+path=("${HOME}/.nodenv/bin" $path)
 
 function nodenv_info {
     NODENV_VERSION=$(nodenv version-name)
