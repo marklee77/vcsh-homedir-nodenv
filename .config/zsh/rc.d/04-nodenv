@@ -1,5 +1,7 @@
 path=("${HOME}/.nodenv/bin" $path)
 
+export PROMPT_INFO="${PROMPT_INFO}\$(nodenv_info)"
+
 function nodenv_info {
     NODENV_VERSION=$(nodenv version-name)
     if [ "${NODENV_VERSION}" != "system" ]; then
